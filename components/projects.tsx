@@ -9,7 +9,7 @@ import { Reveal } from '@/components/reveal'
 import { projects, type Project } from '@/lib/portfolio-data'
 import { cn } from '@/lib/utils'
 
-const categories = ['All', 'Web', 'Mobile', 'Tools'] as const
+const categories = ['All', 'Data & AI'] as const
 type Category = (typeof categories)[number]
 
 export function Projects() {
@@ -27,7 +27,7 @@ export function Projects() {
           <SectionHeading
             index="04"
             title="Projects"
-            intro="Selected things I have built — some for work, some because I could not stop thinking about them."
+            intro="Selected things I have built or building."
           />
           <Reveal delay={0.1}>
             <div
