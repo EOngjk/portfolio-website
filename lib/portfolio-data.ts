@@ -12,10 +12,10 @@ export const profile = {
     {
       label: 'LinkedIn',
       href: 'https://www.linkedin.com/in/ericojk/',
-      handle: '/in/ojunkye',
+      handle: '/in/ericojk',
     },
   ],
-  portrait: '/Airport Authority.jpeg',
+  portrait: '/photo.jpeg',
 }
 
 export const story = {

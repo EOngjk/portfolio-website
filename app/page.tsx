@@ -17,7 +17,7 @@ export default function Page() {
           id="work"
           index="02"
           title="Work"
-          intro="Roles, teams, and the problems I was trusted to solve. Expand any entry for the details."
+          intro="Roles, teams, and the problems I was trusted to solve."
           items={work}
         />
         <Timeline
