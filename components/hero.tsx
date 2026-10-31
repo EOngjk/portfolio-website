@@ -37,7 +37,7 @@ export function Hero() {
               <span className="absolute inline-flex size-full animate-ping rounded-full bg-accent opacity-75" />
               <span className="relative inline-flex size-2 rounded-full bg-accent" />
             </span>
-            Available for select projects · {profile.location}
+            {profile.location}
           </motion.p>
 
           <h1 className="text-5xl leading-[1.02] font-semibold text-balance md:text-7xl">
@@ -55,7 +55,7 @@ export function Hero() {
               transition={{ duration: 0.7, delay: 0.2, ease }}
               className="block text-muted-foreground"
             >
-              I&apos;m a{' '}
+              I&apos;m{' '}
               <span className="relative inline-grid overflow-hidden align-top text-primary">
                 <AnimatePresence mode="popLayout" initial={false}>
                   <motion.span
@@ -97,6 +97,8 @@ export function Hero() {
             </a>
             <a
               href={profile.resumeUrl}
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center gap-2 rounded-full border border-border bg-card px-5 py-2.5 text-sm font-medium transition-colors hover:border-foreground"
             >
               Download résumé

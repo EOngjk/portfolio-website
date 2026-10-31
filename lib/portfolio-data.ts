@@ -1,29 +1,31 @@
 export const profile = {
   name: 'Eric Ong Jun-Kye',
   firstName: 'Eric',
-  roles: ['Data Analyst', 'Data Scientist', 'AI Engineer'],
+  roles: ['a Data Analyst', 'a Data Scientist', 'an AI Engineer'],
   tagline:
     'I build AI Agents, AI-powered workflows, data pipelines, and dashboards that simplify complex tasks and reduce manual work.',
   location: 'Hong Kong',
   currently: 'Data Analyst at Société Générale',
-  resumeUrl: '#',
+  resumeUrl: '/EricOngJunKye_CV.pdf',
   socials: [
-    { label: 'GitHub', href: 'https://github.com/EOngjk', handle: '@EOngjk' },
+    { label: 'Email', href: 'mailto:ojunkye@gmail.com', handle: 'ojunkye@gmail.com', external: false},
+    { label: 'GitHub', href: 'https://github.com/EOngjk', handle: '@EOngjk', external: true },
     {
       label: 'LinkedIn',
       href: 'https://www.linkedin.com/in/ericojk/',
       handle: '/in/ericojk',
+      external: true
     },
   ],
   portrait: '/photo.jpeg',
 }
 
 export const story = {
-  heading: 'XD.',
+  heading: 'A little about me',
   paragraphs: [
-    'Malaysian kid from Ampang, Selangor. Arrived in Hong Kong in 2021 with full scholarship and now pursuing my career in data and AI.',
+    'Originally from Ampang, Selangor, Malaysia, moved to Hong Kong in 2021 on a full scholarship. Today, I am pursuing my career in data and AI.',
     'Growing up, I\'ve always been fascinated by new technology and business ideas. That curiosity still drives me today, but now it\'s focused on data, AI, and emerging tech.',
-    'Open to connecting with others building practical data and AI solutions.'
+    'I enjoy connecting with people who share that curiosity, whether to exchange ideas, learn from each other or building something useful.'
   ],
   facts: [
     { label: 'Based in', value: 'Hong Kong' },
@@ -79,12 +81,25 @@ export const education: TimelineItem[] = [
     organization: 'Hong Kong Baptist University',
     location: 'Hong Kong',
     summary:
-      'Specialized in distributed systems and human-computer interaction. Thesis on latency-aware scheduling for edge workloads.',
+      'Developed a foundation in business computing, data analytics and software development, with a focus on applying technology and data-driven insights to business challenges.',
     highlights: [
       'Graduated with First Class Honours, cGPA 3.95 / 4.00',
       'Scholarships: Belt and Road Scholarship (Malaysia); Full Admission Scholarship Scheme for Overseas Applicants; HKBU Computer Science Department Alumni Scholarship; Outstanding Student Scholarship for BCDA Students.',
     ],
     tags: ['Economics', 'Finance', 'Software Development','Data Analytics', 'Data Science'],
+  },
+  {
+    id: 'edu-2',
+    period: '2019 — 2020',
+    title: 'Cambridge A-Levels, Mix Stream',
+    organization: 'Methodist College Kuala Lumpur',
+    location: 'Kuala Lumpur, Malaysia',
+    summary:
+      'Developed a strong foundation in analytical thinking, problem-solving, and quantitative reasoning.',
+    highlights: [
+      '4A*s in A-Level examinations.',
+    ],
+    tags: ['Accounting', 'Analytical Thinking', 'Problem-Solving', 'Quantitative Reasoning'],
   },
 ]
 

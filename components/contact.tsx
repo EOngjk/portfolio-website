@@ -1,6 +1,5 @@
 import { ArrowUpRight } from 'lucide-react'
 import { Reveal } from '@/components/reveal'
-import { ContactForm } from '@/components/contact-form'
 import { profile } from '@/lib/portfolio-data'
 
 export function Contact() {
@@ -12,18 +11,18 @@ export function Contact() {
       className="scroll-mt-20 border-t border-border bg-foreground text-background"
     >
       <div className="mx-auto flex max-w-6xl flex-col gap-14 px-5 py-20 md:px-8 md:py-28">
-        <Reveal className="grid gap-10 lg:grid-cols-[1fr_1.3fr] lg:gap-16">
+        <Reveal className="mx-auto w-full max-w-3xl">
           <div className="flex flex-col gap-8">
             <div className="flex flex-col gap-6">
               <p className="text-sm font-medium uppercase tracking-widest text-background/60">
                 05 — Contact
               </p>
               <h2 className="text-4xl leading-[1.05] font-semibold text-balance md:text-6xl">
-                Let&apos;s build something worth showing.
+                Let&apos;s connect!
               </h2>
               <p className="max-w-lg text-pretty text-lg leading-relaxed text-background/70">
-                Whether it&apos;s a role, a collaboration, or a question about
-                anything on this page — drop me a message and I&apos;ll reply.
+                Whether you have a job opportunity, a question about my work or projects, or simply want to connect,
+                feel free to reach out through any of the channels below!
               </p>
             </div>
 
@@ -46,8 +45,6 @@ export function Contact() {
               ))}
             </ul>
           </div>
-
-          <ContactForm />
         </Reveal>
 
         <div className="flex flex-col gap-2 border-t border-background/15 pt-6 text-sm text-background/60 md:flex-row md:items-center md:justify-between">
