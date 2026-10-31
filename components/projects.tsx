@@ -103,6 +103,8 @@ function ProjectCard({ project, wide }: { project: Project; wide: boolean }) {
     >
       <a
         href={primaryHref}
+        target="_blank"
+        rel="noopener noreferrer"
         aria-label={`Open ${project.title}`}
         className={cn(
           'relative block overflow-hidden bg-muted',
@@ -129,6 +131,8 @@ function ProjectCard({ project, wide }: { project: Project; wide: boolean }) {
           </div>
           <a
             href={primaryHref}
+            target="_blank"
+            rel="noopener noreferrer"
             aria-label={`Visit ${project.title}`}
             className="inline-flex size-9 shrink-0 items-center justify-center rounded-full border border-border transition-colors group-hover:border-primary group-hover:bg-primary group-hover:text-primary-foreground"
           >
@@ -154,10 +158,14 @@ function ProjectCard({ project, wide }: { project: Project; wide: boolean }) {
           {project.repoUrl ? (
             <a
               href={project.repoUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label={`View source code for ${project.title} (opens in a new tab)`}
               className="inline-flex items-center gap-1.5 text-sm text-muted-foreground transition-colors hover:text-foreground"
             >
               <Code2 className="size-4" aria-hidden="true" />
               Source
+              <ArrowUpRight className="size-3.5" aria-hidden="true" />
             </a>
           ) : null}
         </div>
